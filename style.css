@@ -1,0 +1,63 @@
+/* Estilos globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos do container principal */
+
+.container {
+    width: 450px;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* Estilos do modo claro */
+
+.dark-mode {
+    width: 100vw;
+    height: 100vh;
+    background-color: #212737;
+    color: #a4b1c2;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dark-mode h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* ... (outros estilos específicos) ... */
+
+
+/* Animação */
+
+@keyframes hide {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+
+/* Pseudoclasse hover */
+
+button:hover {
+    cursor: pointer;
+}

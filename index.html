@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Mode</title>
+</head>
+
+<body>
+    <div class="dark-mode" id="dark-mode">
+        <h2 id="title">Change Mode</h2>
+        <div class="container" id="container">
+            <div class="areaButton day" id="area-light">
+                <div class="sun">
+                    <button class="btn" id="btn"></button>
+                    <div class="sun-circle"></div>
+                    <div class="sun-circle sun-dois"></div>
+                    <div class="sun-circle sun-tres"></div>
+                </div>
+                <div class="cloud">
+                    <span class="circulo um"></span>
+                    <span class="circulo dois"></span>
+                    <span class="circulo tres"></span>
+                    <span class="circulo quatro"></span>
+                    <span class="circulo dois-op"></span>
+                    <span class="circulo tres-op"></span>
+                    <span class="circulo quatro-op"></span>
+                    <span class="circulo cinco"></span>
+                    <span class="circulo cinco-op"></span>
+                </div>
+            </div>
+            <div class="areaButton dark none" id="areaDark">
+                <div class="moon">
+                    <div class="moon-circle moon-um"></div>
+                    <div class="moon-circle moon-dois"></div>
+                    <div class="moon-circle moon-tres"></div>
+                    <button class="btn" id="btn-dark"></button>
+                    <div class="crater crater-um"></div>
+                    <div class="crater crater-dois"></div>
+                    <div class="crater crater-tres"></div>
+                    <span class="star star-position"></span>
+                    <span class="star star-dois"></span>
+                    <span class="star star-tres"></span>
+                    <span class="star star-quatro"></span>
+                    <span class="star star-cinco"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('btn').addEventListener('click', function() {
+            document.getElementById('area-light').classList.add('none')
+            document.getElementById('areaDark').classList.remove('none')
+            document.getElementById('dark-mode').style.backgroundColor = "#9fe6ff"
+            document.getElementById('title').style.color = "#212737"
+
+        })
+        document.getElementById('btn-dark').addEventListener('click', function() {
+            document.getElementById('areaDark').classList.add('none')
+            document.getElementById('area-light').classList.remove('none')
+            document.getElementById('dark-mode').style.backgroundColor = "#212737"
+            document.getElementById('title').style.color = "#ccddee"
+
+        })
+    </script>
+</body>
+
+</html>
